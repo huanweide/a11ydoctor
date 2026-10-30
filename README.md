@@ -1,8 +1,19 @@
+<!-- badges -->
+[![Node](https://img.shields.io/badge/Node.js-supported-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Zero-Deps](https://img.shields.io/badge/dependencies-zero-0f9d58?logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![License](https://img.shields.io/github/license/huanweide/a11ydoctor)](LICENSE)
+<!-- /badges -->
+
 # a11ydoctor
 
 零依赖单文件 **Web 可访问性静态扫描 CLI**。扫 HTML / JSX / Vue / Svelte 模板的语义 a11y 反模式，给出严重度、加权健康分与 CI 门禁。纯 Node 标准库实现，**零依赖、零配置、可离线**。
 
 > 属于「代码健康 family」前端切片：devdoctor（依赖体检）+ testlite（测试体检）+ debtlens（技术债密度）+ a11ydoctor（前端可访问性）。
+
+## 谁该用 / 谁先别用
+
+- **该用**：写 HTML / JSX / Vue / Svelte 的团队与个人；WCAG / ADA / 国标无障碍合规是法律与企业刚需；想在 CI 里做纯静态 a11y 门禁。
+- **先别用**：已用 axe-core + 浏览器集成做全量 a11y（本工具不查对比度等运行时项）；纯后端、没有前端模板的项目。
 
 ## 为什么不是 oxlint / axe
 
@@ -85,6 +96,14 @@ a11ydoctor . --json
 - 可访问名称判定基于 `aria-*` / `title` / `alt` 属性或标签内**直接**文本；复杂嵌套文本建议在交互元素上加 `aria-label`。
 - 颜色对比度属运行时计算，本工具不覆盖（需 axe + 浏览器）。
 - 估算类指标仅供体检参考，非权威合规认证。
+
+## ⭐ 给个 Star
+
+如果 a11ydoctor 帮你拦住过一次「缺 alt / 表单无 label」的无障碍缺陷，欢迎点个 Star ⭐：https://github.com/huanweide/a11ydoctor
+
+## 作者
+
+由 [huanweide](https://github.com/huanweide) 维护。
 
 ## License
 
