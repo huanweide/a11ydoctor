@@ -5,6 +5,7 @@
 <!-- /badges -->
 
 # a11ydoctor
+> **English** · [README_EN.md](./README_EN.md)
 
 零依赖单文件 **Web 可访问性静态扫描 CLI**。扫 HTML / JSX / Vue / Svelte 模板的语义 a11y 反模式，给出严重度、加权健康分与 CI 门禁。纯 Node 标准库实现，**零依赖、零配置、可离线**。
 
